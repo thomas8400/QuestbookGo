@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonApp</title> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-screen"> 
+  <div class="logo-container" id="login-logo-container">
+    <img src="./images/LOGO.png" alt="Logo Nom" class="logo">
+  </div>
+  
+  <div class="login-container" id="login-section">
+    <h1 class="login-title">Connexion</h1>
+    <input type="password" class="login-input" placeholder="Mot de passe">
+    <button class="login-btn">Se connecter</button>
+    <div class="error-message" style="display:none;">Identifiants incorrects.</div>
+  </div>
+  <!-- Compte à rebours -->
+  <div id="countdown-timer"></div>
+  
+    <!-- Score -->
+  <div id="score-display">Score : 0/X</div> -
+
+  <!-- Menu déroulant pour la traduction -->
+  <div id="translate-dropdown">
+    <button class="dropdown-btn" data-translate="currentLang">Français &#9662;</button>
+    <div class="dropdown-content">
+      <a href="#" data-lang="" class="active">Français</a>
+      <a href="#" data-lang="en">English</a>
+      <a href="#" data-lang="es">Español</a>
+      <a href="#" data-lang="it">Italiano</a>
+    </div>
+  </div>
+
+  <div class="logo-container" id="main-app-logo-container">
+    <img src="./images/LOGO.png" alt="Logo Nom" class="logo">
+  </div>
+
+  <div class="container">
+    <h1 id="enigme-title"></h1>
+    <p id="verifyText">Vérifiez votre réponse !</p>
+    <input type="text" id="response" data-translate="placeholderResponse" placeholder="Réponse">
+
+    <div class="button-container">
+      <button id="validateBtn" data-translate="validateBtn">Valider</button>
+      <button id="hintBtn" data-translate="hintBtn">Indice</button>
+    </div>
+
+    <button id="solutionBtn" style="display: none;" data-translate="solutionBtn">Voir la solution</button>
+    <p id="hintText" style="display: none;"></p>
+    <p id="solutionText" style="display: none;"></p>
+    <p id="message" style="display: none;"></p>
+
+    <div class="arrow arrow-left">&#10094;</div>
+    <div class="arrow arrow-right">&#10095;</div>
+  </div>
+
+  <div class="footer-container">
+    <a href="mentions-legales.html" id="legal-mentions-link" data-translate="legalMentions">Mentions légales</a>
+    <div id="footer-text">Erwan VANCE © 2026</div>
+  </div>
+
+  <script src="translation.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

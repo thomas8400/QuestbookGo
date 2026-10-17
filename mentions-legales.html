@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions Légales - Puzzle Key</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="tradml.js" defer></script>
+</head>
+<body>
+  <!-- Menu déroulant pour la traduction -->
+  <div id="translate-dropdown"style="display:active;"> <!--changer active en none pour désactiver le sélecteur de langue-->
+    <button class="dropdown-btn" data-translate="currentLang">Français &#9662;</button>
+    <div class="dropdown-content">
+      <a href="#" data-lang="fr" class="active">Français</a>
+      <a href="#" data-lang="en">English</a>
+      <a href="#" data-lang="es">Español</a>
+      <a href="#" data-lang="it">Italiano</a>
+    </div>
+  </div>
+
+  <!-- Logo avec lien vers la page principale -->
+  <a href="index.html" class="logo-link">
+    <img src="./images/LOGO.png" alt="Logo Nom" class="logo">
+  </a>
+
+  <!-- Conteneur des mentions légales -->
+  <div class="legal-container">
+    <h1 data-translate="title">Mentions légales</h1>
+    <br>
+
+    <!-- Section 1 -->
+    <p data-translate="section1">Les présentes mentions légales sont portées à la connaissance des utilisateurs du site <a href="https://app.puzzlekey-games.com">https://app.puzzlekey-games.com.</a>.</p>
+
+    <!-- Section 2 -->
+    <p data-translate="section2">En se connectant et en naviguant sur le site, l'utilisateur accepte pleinement et sans réserve les présentes mentions légales, disponibles dans la section « Mentions légales » du site.</p>
+
+    <!-- Section 3: Éditeur -->
+    <h2 data-translate="editorTitle">1. Éditeur</h2>
+    <p data-translate="section3">Le présent site, accesible à l'URL <a href="...">...</a>, est édité par Erwan VANCE :</p>
+    <ul>
+    
+      <li data-translate="email">Email : <a href="...">...</a></li>
+   
+    </ul>
+
+    <!-- Section 4: Hébergement -->
+    <h2 data-translate="hostingerTitle">2. Hébergement</h2>
+    <p data-translate="section4">Le site est hébergé par :</p>
+    <ul>
+    </ul>
+
+    <!-- Section 5: Propriété Intellectuelle -->
+    <h2 data-translate="PITitle">3. Propriété Intellectuelle</h2>
+    <p data-translate="PITitleContent">L'ensemble des contenus présents sur notre site et les livres interactifs (textes, images, graphismes, logos, etc..) est protégé par les lois en vigueur en France sur la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, sans autorisation écrite préalable de l'auteur, est interdite et peut constituer un délit de contrefaçon sanctionné par le code de la propriété intellectuelle.</p>
+
+    <!-- Section 6: Limitation de Responsabilité -->
+    <h2 data-translate="LimitRespTitle">4. Limitation de Responsabilité</h2>
+    <p data-translate="LimitRespContent">Le Site est disponible partout, 24 heures sur 24 et 7 jours sur 7, sauf en cas de force majeure, d'interruption, qu'elle soit planifiée ou non, notamment pour des besoins de maintenance. L'Editeur décline toute responsabilité en cas de modification, d'interruption ou de suspension du Site.</p>
+
+    <!-- Section 7: Conditions d'Utilisation -->
+    <h2 data-translate="CondTitle">5. Conditions d'Utilisation</h2>
+    <p data-translate="CondContent">L'accès à notre site et son utilisation sont exclusivement destinés à un usage personnel. Par conséquent, vous acceptez de ne pas exploiter ce site ni les informations qu'il contient à des fins commerciales, politiques, publicitaires, ou pour toute activité de prospection commerciale.</p>
+
+    <!-- Section 8: Données Personnelles -->
+    <h2 data-translate="DataTitle">6. Données Personnelles</h2>
+    <p data-translate="DataContent">Notre site ne traite aucune information personnelle. En cas de collecte de données à caractère personnel, nous le ferons conformément aux dispositions du Règlement Général sur la Protection des Données (RGPD) et la loi n°8-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés.</p>
+
+    <!-- Section 9: Cookies -->
+    <h2 data-translate="CookiesTitle">7. Cookies</h2>
+    <p data-translate="CookiesContent">Notre site n'utilise aucun cookie, ni aucun autre traceur.</p>
+
+    <!-- Section 10: Loi Applicable et Attribution de Juridiction -->
+    <h2 data-translate="LawTitle">8. Loi applicable et attribution de juridiction</h2>
+    <p data-translate="LawContent">Tout litige en relation avec l'utilisation de notre site est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents français.</p>
+
+    <!-- Section 11: Contact -->
+    <h2 data-translate="ContactTitle">9. Contact</h2>
+    <p data-translate="ContactContent">Pour toute question ou demande d'informations concernant les mentions légales du site, vous pouvez nous contacter par e-mail à : <a href="mailto:contact@puzzlekey.com">contact@puzzlekey.com</a></p>
+
+    <p data-translate="updateDate">(Mise à jour le 16/10/2026)</p>
+  </div>
+
+  <!-- Script pour ajouter le son au clic sur le logo -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const logoLink = document.querySelector('.logo-link');
+      const transitionSound = new Audio('sounds/transition-sound.mp3');
+      
+      logoLink.addEventListener('click', function(e) {
+        // Jouer le son avant la redirection
+        e.preventDefault(); // Empêcher la redirection immédiate
+        transitionSound.play();
+        
+        // Attendre que le son commence à jouer puis rediriger
+        transitionSound.onplay = function() {
+          setTimeout(function() {
+            window.location.href = logoLink.getAttribute('href');
+          }, 300); // Petit délai pour que le son soit audible avant la redirection
+        };
+      });
+    });
+  </script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const logo = document.querySelector('.logo');
+  if (logo) {
+    logo.addEventListener('click', () => {
+      // Marquer l'utilisateur comme authentifié avant de rediriger
+      window.userAuthenticated = true;
+      // Rediriger vers la page principale
+      window.location.href = 'index.html'; // ou le nom de votre page principale
+    });
+  }
+});
+</script>
+</body>
+</html>
