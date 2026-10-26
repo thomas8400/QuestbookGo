@@ -554,22 +554,22 @@ function initializeLanguageDisplay() {
       }, {
         title: {
           fr: "Jour 4 : La Voiture-Restaurant ",
-          en: "Title 4",
-          es: "Título 4",
-          it: "Titolo 4"
+          en: "Day 4 : the dining car",
+          es: "Día 4 : El vagón restaurante",
+          it: "Giorno 4 : Il vagone ristorante"
         },
         correctAnswers: ["HUIT"],
         hint: {
           fr: "Compte le nombre de lettres qui composent chaque mot.",
-          en: "Lorem ipsum dolor sit amet",
-          es: "Lorem ipsum dolor sit amet",
-          it: "Lorem ipsum dolor sit amet"
+          en: "Count the number of letters in each word.",
+          es: "Cuenta el número de letras que componen cada palabra.",
+          it: "Conta il numero di lettere che compongono ogni parola."
         },
         solution: {
           fr: "FOURCHETTE = 10 lettres. COUTEAU = 7 lettres. CUILLÈRE = 8 lettres. Le résultat est 8. Comme la combinaison est un code alphabétique, le code est « HUIT »",
           en: "Lorem ipsum dolor sit amet",
-          es: "Lorem ipsum dolor sit amet",
-          it: "Lorem ipsum dolor sit amet"
+          es: "TENEDOR = 7 letras. CUCHARA = 7 letras .CUCHILLO = 8 letras. El resultado es 8. Como la combinación es un código alfabético, el código es « OCHO »",
+          it: "FOURCHETTE = 9 lettere. CUCCHIAIO = 9 lettere. COLTELO = 8 lettere. Il risultato è 8. Poiché la combinazione è un codice alfabetico, il codice è « OTTO »."
         },
          hasHint: true,
         hasSolution: true
@@ -598,22 +598,22 @@ function initializeLanguageDisplay() {
       }, {
         title: {
           fr: "Jour 6 : Le Code Crypté de la Boussole",
-          en: "Title 6",
-          es: "Título 6",
-          it: "Titolo 6"
+          en: "Day 6 : The Compass's Encrypted Code",
+          es: "Día 6 : El código de la brújula encriptada",
+          it: "Giorno 6 : Il codice cifrato della bussola"
         },
         correctAnswers:["KBPL","K B P L"],
         hint: {
           fr: "Les quatre coins du monde désignent les 4 grandes directions de la boussole dans le sens horaire : Le premier souffle correspond à la 1ère lettre de chaque mot",
           en: "Lorem ipsum dolor sit amet",
-          es: "Lorem ipsum dolor sit amet",
-          it: "Lorem ipsum dolor sit amet"
+          es: "«Los cuatro rincones del mundo» se refiere a las cuatro direcciones principales de la brújula en el sentido de las agujas del reloj : el «primer soplo» corresponde a la primera letra de cada palabra.",
+          it: "Per “i quattro angoli del mondo” si intendono le quattro principali direzioni della bussola in senso orario : il “primo soffio” corrisponde alla prima lettera di ciascuna parola."
         },
         solution: {
           fr: "Nord, Est, Sud, Ouest = (N E S O). On recule chacune des lettres de 3 rangs dans l’alphabet, ce qui nous donne le code secret à 4 lettres : K B P L",
           en: "Lorem ipsum dolor sit amet",
-          es: "Lorem ipsum dolor sit amet",
-          it: "Lorem ipsum dolor sit amet"
+          es: "Norte, Este, Sur, Oeste = (N E S O). Desplazamos cada una de las letras tres posiciones hacia atrás en el alfabeto, lo que nos da el código secreto de cuatro letras: K B P L",
+          it: "Nord, Est, Sud, Ovest = (N E S O). Spostiamo ciascuna delle lettere di tre posizioni all'indietro nell'alfabeto, ottenendo così il codice segreto di quattro lettere: I B P L"
         },
          hasHint: true,
         hasSolution: true
@@ -763,13 +763,13 @@ function initializeLanguageDisplay() {
           fr: "Le résultat de l’opération inscrite te donne une clé de déchiffrement. ",
           en: "The result of the written operation gives you a decryption key.",
           es: "El resultado de la operación escrita te da una clave de descifrado.",
-          it: "Il risultato dell'operazione scritta ti dà una chiave di decifrazione."
+          it: "Il risultato dell'operazione indicata ti fornisce una chiave di decodifica."
         },
         solution: {
           fr: "16/ 4 = 4 . Application du décalage (+4) sur le mot SNOW. S+4 = W. N+4 = R. O+4 = S. W+4 = A (après le Z, l’alphabet repart à A). La combinaison est : WRSA",
           en: "16 / 4 = 4. Applying the shift (+4) to the word SNOW. S+4 = W. N+4 = R. O+4 = S. W+4 = A (after Z, the alphabet starts again at A). The combination is: WRSA",
           es: "16 / 4 = 4. Aplicación del desplazamiento (+4) a la palabra SNOW. S+4 = W. N+4 = R. O+4 = S. W+4 = A (después de la Z, el alfabeto vuelve a empezar en A). La combinación es: WRSA",
-          it: "16 / 4 = 4. Applicazione dello scostamento (+4) alla parola SNOW. S+4 = W. N+4 = R. O+4 = S. W+4 = A (dopo la Z, l'alfabeto ricomincia da A). La combinazione è: WRSA"
+          it: "16/4 = 4. Applicazione dello spostamento (+4) alla parola NEVE. N+4 = R. E+4 = I. V+4 = C (dopo la Z, l’alfabeto ricomincia dalla A). E+4 = I. La combinazione è: RICI"
         },
         hasHint: true,
         hasSolution: true
