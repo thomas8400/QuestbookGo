@@ -425,7 +425,6 @@ document.querySelectorAll('#translate-dropdown .dropdown-content a').forEach(lin
         <button class="dropdown-btn" data-translate="currentLang">Français &#9662;</button>
         <div class="dropdown-content">
           <a href="#" data-lang="fr">Français</a>
-          <a href="#" data-lang="en">English</a>
           <a href="#" data-lang="es">Español</a>
           <a href="#" data-lang="it">Italiano</a>
         </div>
